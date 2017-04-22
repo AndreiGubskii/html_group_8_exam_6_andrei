@@ -11,7 +11,7 @@ html(lang="en")
 		title= title			
 	body
 		.container
-			header.header
+			header.header#top
 				div(class='logo push-left')
 					h1.logo-title 
 						a(class='logo-link' href="#")
@@ -19,7 +19,7 @@ html(lang="en")
 				div(class = "menu-btn push-right" id="btn_menu")
 				nav(class="menu push-right")
 					each item in menu_items
-						a(class="menu-item" href="#")= item							
+						a(class="menu-item" href="#"+item)= item							
 		.slider
 			div
 				.promo-content
@@ -34,7 +34,7 @@ html(lang="en")
 					a(href="#" class="promo-btn")= promo_btn
 				img(src="/uploads/promo.jpg" alt = "promo")
 		.container
-			section.feature-section
+			section.feature-section#Services
 				each item in feature_items
 					.feature-section-item
 						span.feature-section-item-icon
@@ -42,7 +42,7 @@ html(lang="en")
 						.feature-section-item-content
 							h4.feature-section-item-title= item.title
 							p.feature-section-item-description= item.description
-		section.awesome-clients-section
+		section.awesome-clients-section#Clients
 			.container
 				h2.awesome-clients-section-title= awesome_clients_title
 				p.awesome-clients-section-description= awesome_clients_description
@@ -64,7 +64,7 @@ html(lang="en")
 					each item in logos
 						a(href="#" class="section-brend-logos-item")
 							img(src=item.logo+"" width="190" height="50")
-		section.section-amazing-team
+		section.section-amazing-team#Team
 			.container
 				h2.section-amazing-team-title= awesome_clients_title
 				p.section-amazing-team-description= awesome_clients_description
@@ -79,7 +79,7 @@ html(lang="en")
 									a(href="#" class="social-icon")
 										i(class= icon + " aria-hidden='true'")
 				p.section-amazing-team-description= awesome_clients_description_second
-		section.section-contacts
+		section.section-contacts#Contact
 			.container
 				.section-contacts-wrap
 					.section-contacts-info

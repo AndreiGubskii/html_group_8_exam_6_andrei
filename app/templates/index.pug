@@ -3,9 +3,9 @@ html(lang="en")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet")
 		link(rel="stylesheet", href="css/font-awesome.min.css")
 		link(rel="stylesheet", href="vendor/slick/slick.css")
-
 		link(rel="stylesheet", href="css/reset.css")
 		link(rel="stylesheet", href="css/main.css")
 		title= title			
@@ -22,10 +22,17 @@ html(lang="en")
 						a(class="menu-item" href="#")= item								
 		.slider
 			div
+				.promo-content
+					p.promo-description= promo_description
+					h2.promo-title= promo_title
+					a(href="#" class="promo-btn")= promo_btn
 				img(src="/uploads/promo.jpg" alt = "promo")
 			div
+				.promo-content
+					p.promo-description= promo_description
+					h2.promo-title= promo_title
+					a(href="#" class="promo-btn")= promo_btn
 				img(src="/uploads/promo.jpg" alt = "promo")
-
 		script(src="vendor/jq/jquery-3.1.1.js")
 		script(src="vendor/slick/slick.min.js")
 		script(src="js/main.js")

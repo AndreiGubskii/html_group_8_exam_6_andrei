@@ -3,11 +3,94 @@
 	"promo_title": "Yup, we can do that.",
 	"promo_description": "Can you build the website of my dreams?",
 	"promo_btn": "Lern More",
+	"awesome_clients_title": "Awesome Clients",
+	"awesome_clients_description": "See what nice things our clients said about us. ",
+	"awesome_clients_description_second": "Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt proin iaculis.",
 	"menu_items": [
 		"Home",
 		"Services",
 		"Clients",
 		"Team",
 		"Contact"
+  	],
+  	"amazing_team":[
+		{
+			"name": "Kimberly Thompson",
+			"description": "Marketer",
+			"ava": "uploads/ava_3.jpg",
+			"social":["fa fa-twitter","fa fa-facebook","fa fa-pinterest-p"]
+		},
+		{
+			"name": "Rico Massimo",
+			"description": "Coder",
+			"ava": "uploads/ava_4.jpg",
+			"social":["fa fa-twitter","fa fa-facebook","fa fa-google-plus"]
+		},
+		{
+			"name": "Uku Mason",
+			"description": "Graphic Designer",
+			"ava": "uploads/ava_5.jpg",
+			"social":["fa fa-facebook","fa fa-pinterest-p"]
+		}
+  	],
+  	"logos":[
+		{
+			"logo": "uploads/brend-1.png"
+		},
+		{
+			"logo": "uploads/brend-2.png"
+		},
+		{
+			"logo": "uploads/brend-3.png"
+		},
+		{
+			"logo": "uploads/brend-4.png"
+		}
+  	],
+  	"feature_items": [
+		{
+			"title": "Branding & Identity",
+			"icon": "fa fa-user",
+			"description": "Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. "
+		},
+		{
+			"title": "Web & Graphic Design",
+			"icon": "fa fa-window-maximize",
+			"description": "Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. "
+		},
+		{
+			"title": "Mobile App Development",
+			"icon": "fa fa-tablet",
+			"description": "Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. "
+		},
+		{
+			"title": "Animations",
+			"icon": "fa fa-video-camera",
+			"description": "Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. "
+		},
+		{
+			"title": "UI/UX",
+			"icon": "fa fa-star",
+			"description": "Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. "
+		},
+		{
+			"title": "Photography",
+			"icon": "fa fa-camera",
+			"description": "Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. "
+		}
+  	],
+  	"awesome_clients_items": [
+		{
+			"ava": "uploads/ava_1.jpg",
+			"reverse" : false,
+			"quote": "“ Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus. ”",
+			"client_name": "- Jamie Richardson, Founder of Cocoa Media"
+		},
+		{
+			"ava": "uploads/ava_2.jpg",
+			"reverse" : true,
+			"quote": "“ Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus. ” ",
+			"client_name": "- Bart Thompson, Founder of Rainel"
+		}
   	]
 }

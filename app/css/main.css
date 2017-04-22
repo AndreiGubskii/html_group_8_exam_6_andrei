@@ -29,7 +29,7 @@ body
     display: block; width: 30px; height: 30px; margin: 20px 15px 0 0; background: url('../images/hamburger.svg') 0 0 no-repeat; background-size: cover;
 }
 
-@media (min-width: 480px)
+@media (min-width: 720px)
 {
     .menu-btn
     {
@@ -53,7 +53,7 @@ body
     display: none; background: rgba(41, 96, 107, .5);
 }
 
-@media (min-width: 480px)
+@media (min-width: 720px)
 {
     .menu
     {
@@ -67,7 +67,7 @@ body
     display: block; padding: 10px 70px 10px 10px; text-decoration: none; color: #fff;
 }
 
-@media (min-width: 480px)
+@media (min-width: 720px)
 {
     .menu-item
     {
@@ -115,4 +115,190 @@ body
 {font-size: 20px; font-weight: 700; display: inline-block; margin: 20px 0 0 0; padding: 10px 35px; 
 
     text-decoration: none; color: #fff; border: 2px solid #fff;
+}
+
+.feature-section
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; padding: 30px; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap;
+}
+
+.feature-section-item
+{position: relative; 
+
+    width: 100%; margin: 5px;
+}
+
+@media (min-width: 920px)
+{
+    .feature-section-item
+    {
+        width: 47%;
+    }
+}
+
+.feature-section-item-icon
+{font-size: 42px; display: block; width: 75px; height: 75px; margin: 0 auto; padding: 8px 0; text-align: center; color: #fff; border-radius: 50%; 
+    background: black;
+}
+
+@media (min-width: 920px)
+{
+    .feature-section-item-icon
+    {
+        position: absolute; top: 25px; left: 0;
+    }
+}
+
+.feature-section-item-description
+{
+    color: #9b9b9b;
+}
+
+.feature-section-item-content
+{
+    padding: 5px; text-align: center;
+}
+
+@media (min-width: 920px)
+{
+    .feature-section-item-content
+    {
+        padding: 0 0 0 100px; text-align: left;
+    }
+}
+
+.awesome-clients-section
+{
+    background: #fafafa;
+}
+
+.awesome-clients-section-title
+{
+    font-size: 54px; margin: 0; text-align: center;
+}
+
+.awesome-clients-section-description
+{
+    font-size: 18px; text-align: center; color: #9b9b9b;
+}
+
+.awesome-clients-section-body-item
+{position: relative; 
+
+    display: -webkit-box; 
+
+    display: -ms-flexbox; 
+
+    display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;
+}
+
+.awesome-clients-section-body-item-icon
+{
+    width: 100%; max-width: 220px; height: auto; max-height: 220px; border: solid 8px #fff; border-radius: 50%;
+}
+
+.awesome-clients-section-body-item-quotebox
+{
+    display: inline-block; width: 100%; max-width: 640px; height: auto; max-height: 175px; margin: 30px 0; padding: 40px 75px; border: 2px solid #ededed; background: #fff;
+}
+
+.awesome-clients-section-body-item-quote
+{font-size: 20px; margin: 10px 0; 
+
+    color: #777;
+}
+
+.awesome-clients-section-body-item-clientname
+{font-size: 16px; text-decoration: none; 
+
+    color: #7690c5;
+}
+
+.reverse
+{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+}
+
+.right-triangle::before
+{position: absolute; z-index: 2; top: 85px; right: 274px; width: 0; height: 0; 
+
+    content: ' '; border-width: 25px 0 25px 30px; border-style: solid; border-color: transparent transparent transparent #fff;
+}
+
+.right-triangle::after
+{position: absolute; z-index: 1; top: 85px; right: 271px; width: 0; height: 0; 
+
+    content: ' '; border-width: 25px 0 25px 30px; border-style: solid; border-color: transparent transparent transparent #ededed;
+}
+
+.left-triangle::before
+{position: absolute; z-index: 2; top: 85px; left: 274px; width: 0; height: 0; 
+
+    content: ' '; border-width: 25px 30px 25px 0; border-style: solid; border-color: transparent #fff transparent transparent;
+}
+
+.left-triangle::after
+{position: absolute; z-index: 1; top: 85px; left: 271px; width: 0; height: 0; 
+
+    content: ' '; border-width: 25px 30px 25px 0; border-style: solid; border-color: transparent #ededed transparent transparent;
+}
+
+.section-brend-logos
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; padding: 20px 5px; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;
+}
+
+.section-amazing-team
+{padding: 20px 10px 50px 10px; color: #fff; 
+    background: black;
+}
+
+.section-amazing-team-title
+{
+    font-size: 54px; margin: 0; text-align: center;
+}
+
+.section-amazing-team-description
+{
+    font-size: 18px; text-align: center; color: #9b9b9b;
+}
+
+.section-amazing-team-box
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: distribute; justify-content: space-around;
+}
+
+.section-amazing-team-item
+{margin: 10px; 
+
+    text-align: center;
+}
+
+.section-amazing-team-item-icon
+{
+    width: 100%; max-width: 220px; max-height: 220px; border: solid 8px #fff; border-radius: 50%;
+}
+
+.section-amazing-team-item-title
+{
+    margin: 10px;
+}
+
+.section-amazing-team-item-description
+{
+    margin: 0;
+}
+
+.social-icon
+{display: inline-block; width: 35px; height: 35px; margin: 5px; padding: 5px 0 0 0; text-decoration: none; color: #fff; border: 2px solid #fff; 
+    border-radius: 50%;
 }

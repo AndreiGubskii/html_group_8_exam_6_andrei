@@ -19,7 +19,7 @@ html(lang="en")
 				div(class = "menu-btn push-right" id="btn_menu")
 				nav(class="menu push-right")
 					each item in menu_items
-						a(class="menu-item" href="#")= item								
+						a(class="menu-item" href="#")= item							
 		.slider
 			div
 				.promo-content
@@ -33,6 +33,52 @@ html(lang="en")
 					h2.promo-title= promo_title
 					a(href="#" class="promo-btn")= promo_btn
 				img(src="/uploads/promo.jpg" alt = "promo")
+		.container
+			section.feature-section
+				each item in feature_items
+					.feature-section-item
+						span.feature-section-item-icon
+							i(class= item.icon + " aria-hidden='true'")
+						.feature-section-item-content
+							h4.feature-section-item-title= item.title
+							p.feature-section-item-description= item.description
+		section.awesome-clients-section
+			.container
+				h2.awesome-clients-section-title= awesome_clients_title
+				p.awesome-clients-section-description= awesome_clients_description
+				.awesome-clients-section-body
+					each item in awesome_clients_items
+						-var _class = "awesome-clients-section-body-item "
+						if item.reverse
+							-_class+="reverse right-triangle"
+						else
+							-_class+="left-triangle"
+						div(class = _class)
+							img(src= item.ava+"" width='225' height='225' class="awesome-clients-section-body-item-icon")
+							.awesome-clients-section-body-item-quotebox
+								p.awesome-clients-section-body-item-quote= item.quote
+								a(href="#" class="awesome-clients-section-body-item-clientname")= item.client_name
+		section.section-brend
+			.container
+				.section-brend-logos
+					each item in logos
+						a(href="#" class="section-brend-logos-item")
+							img(src=item.logo+"" width="190" height="50")
+		section.section-amazing-team
+			.container
+				h2.section-amazing-team-title= awesome_clients_title
+				p.section-amazing-team-description= awesome_clients_description
+				.section-amazing-team-box
+					each item in amazing_team
+						.section-amazing-team-item
+							img(src= item.ava+"" width='225' height='225' class="section-amazing-team-item-icon")
+							h3.section-amazing-team-item-title= item.name
+							p.section-amazing-team-item-description= item.description
+							.section-amazing-team-item-social
+								each icon in item.social
+									a(href="#" class="social-icon")
+										i(class= icon + " aria-hidden='true'")
+				p.section-amazing-team-description= awesome_clients_description_second
 		script(src="vendor/jq/jquery-3.1.1.js")
 		script(src="vendor/slick/slick.min.js")
 		script(src="js/main.js")

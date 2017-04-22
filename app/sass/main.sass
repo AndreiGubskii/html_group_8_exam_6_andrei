@@ -1,5 +1,6 @@
 @import mixins
 
+$colors: ('lightnes-text': #9b9b9b)
 *
 	box-sizing: border-box
 body
@@ -75,21 +76,21 @@ body
 	width: 100%
 	height: auto
 
-.promo-
-	&content
+.promo
+	&-content
 		position: absolute
 		width: 100%
 		z-index: 9
 		color: #fff
 		top: 35%
 		text-align: center
-	&title
+	&-title
 		font-size: 66px
 		margin: 0
 		text-transform: uppercase
-	&description
+	&-description
 		font-size: 22px
-	&btn
+	&-btn
 		text-decoration: none
 		color: #fff
 		display: inline-block
@@ -98,4 +99,181 @@ body
 		margin: 20px 0 0 0
 		font-size: 20px
 		font-weight: 700
+
+.feature
+	&-section
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		padding: 30px
+		&-item
+			width: 100%
+			position: relative
+			margin: 5px
+			+desctop
+				width: 47%
+			&-icon
+				background: black
+				color: #fff
+				width: 75px
+				height: 75px
+				display: block
+				padding: 8px 0
+				text-align: center
+				font-size: 42px
+				border-radius: 50%
+				margin: 0 auto				
+				+desctop
+					position: absolute
+					top: 25px
+					left: 0
+			&-description
+				color: map-get($colors, 'lightnes-text')
+			&-content
+				padding: 5px
+				text-align: center
+				+desctop
+					padding: 0 0 0 100px
+					text-align: left
+
+.awesome-clients-section
+	background: #fafafa
+	&-title
+		font-size: 54px
+		text-align: center
+		margin: 0
+	&-description
+		font-size: 18px
+		text-align: center
+		color: map-get($colors, 'lightnes-text')
+	&-body-item
+		display: flex
+		justify-content: space-between
+		position: relative
+		&-icon
+			width: 100%
+			height: auto
+			max-width: 220px
+			max-height: 220px
+			border-radius: 50%
+			border: solid 8px #fff
+		&-quotebox
+			display: inline-block
+			width: 100%
+			max-width: 640px
+			height: auto
+			max-height: 175px
+			background: #fff
+			margin: 30px 0
+			padding: 40px 75px
+			border: 2px solid #ededed
+		&-quote
+			color: #777
+			font-size: 20px
+			margin: 10px 0
+		&-clientname
+			color: #7690c5
+			text-decoration: none
+			font-size: 16px			
+
+.reverse
+	flex-direction: row-reverse
+
+.right-triangle
+	&::before
+		content: " "
+		position: absolute
+		right: 274px
+		top: 85px
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 25px 0 25px 30px
+		border-color: transparent transparent transparent #ffffff
+		z-index: 2
+	&::after
+		content: " "
+		position: absolute
+		right: 271px
+		top: 85px
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 25px 0 25px 30px
+		border-color: transparent transparent transparent #ededed
+		z-index: 1
+
+.left-triangle
+	&::before
+		content: " "
+		position: absolute
+		top: 85px
+		left: 274px    		
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 25px 30px 25px 0
+		border-color: transparent #ffffff transparent transparent
+		z-index: 2
+	&::after
+		content: " "
+		position: absolute
+		top: 85px
+		left: 271px    		
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 25px 30px 25px 0
+		border-color: transparent #ededed transparent transparent
+		z-index: 1
+
+.section-brend
+	&-logos
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		padding: 20px 5px
+
+.section-amazing-team
+	background: black
+	color:#fff
+	padding: 20px 10px 50px 10px
+	&-title
+		font-size: 54px
+		text-align: center
+		margin: 0
+	&-description
+		font-size: 18px
+		text-align: center
+		color: map-get($colors, 'lightnes-text')
+	&-box
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+	&-item
+		text-align: center
+		margin: 10px
+		&-icon
+			width: 100%
+			max-width: 220px
+			max-height: 220px
+			border-radius: 50%
+			border: solid 8px #fff
+		&-title
+			margin: 10px
+		&-description
+			margin: 0
+
+.social-icon
+	border-radius: 50%
+	border: 2px solid #fff
+	padding: 5px 0 0 0
+	width: 35px
+	height: 35px
+	display: inline-block
+	margin: 5px
+	text-decoration: none
+	color: #fff
+
+
 

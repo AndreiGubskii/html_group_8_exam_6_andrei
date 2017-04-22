@@ -79,6 +79,29 @@ html(lang="en")
 									a(href="#" class="social-icon")
 										i(class= icon + " aria-hidden='true'")
 				p.section-amazing-team-description= awesome_clients_description_second
+		section.section-contacts
+			.container
+				.section-contacts-wrap
+					.section-contacts-info
+						h2.section-contacts-info-title= contacts_info_title
+						p.section-contacts-info-description= contacts_info_description
+						.section-conatcts-info-items
+							each item in contacts_info
+								span.contacts-info-item 
+									i(class=item.icon)
+									=item.info
+					.section-contacts-form
+						form
+							input(type="text" placeholder="Your Name *" required)
+							input(type="email" placeholder="Your Email *" required)
+							textarea(rows="4" cols="50" placeholder="Your Message *" required)
+		<footer class="footer">
+			<div class="container">
+				.footer-content-wrap
+					p=footer_text
+			</div>
+		</footer>
+								
 		script(src="vendor/jq/jquery-3.1.1.js")
 		script(src="vendor/slick/slick.min.js")
 		script(src="js/main.js")

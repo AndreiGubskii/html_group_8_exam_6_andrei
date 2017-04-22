@@ -6,6 +6,35 @@
 	"awesome_clients_title": "Awesome Clients",
 	"awesome_clients_description": "See what nice things our clients said about us. ",
 	"awesome_clients_description_second": "Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt proin iaculis.",
+	"contacts_info_title":"Say Hello",
+	"contacts_info_description":"Don’t be shy, drop us an email and say hello! We are a really nice bunch of people :)",
+	"footer_text":"© 2014 Escape by FreebiesXpress • Made In Toronto",
+	"contacts_info":[
+		{
+			"icon":"fa fa-mobile",
+			"info":"(416) 555-0000"
+		},
+		{
+			"icon":"fa fa-envelope",
+			"info":"hello@escape.com"
+		},
+		{
+			"icon":"fa fa-twitter",
+			"info":"@escape"
+		},
+		{
+			"icon":"fa fa-facebook",
+			"info":"facebook.com/escape"
+		},
+		{
+			"icon":"fa fa-google-plus",
+			"info":"plus.com/escape"
+		},
+		{
+			"icon":"fa fa-pinterest-p",
+			"info":"pinterest.com/escape"
+		}
+	],
 	"menu_items": [
 		"Home",
 		"Services",

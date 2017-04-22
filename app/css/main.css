@@ -1,0 +1,92 @@
+*
+{
+    box-sizing: border-box;
+}
+
+.header::after
+{display: table; clear: both; 
+
+    content: '';
+}
+
+.container
+{
+    width: 100%; max-width: 940px; margin: 0 auto;
+}
+
+.header
+{
+    position: relative; z-index: 10;
+}
+
+.menu-btn
+{
+    display: block; width: 30px; height: 30px; margin: 20px 15px 0 0; background: url('../images/hamburger.svg') 0 0 no-repeat; background-size: cover;
+}
+
+@media (min-width: 480px)
+{
+    .menu-btn
+    {
+        display: none;
+    }
+}
+
+.push-right
+{
+    float: right;
+}
+
+.push-left
+{
+    float: left;
+}
+
+.menu
+{position: absolute; right: -1px; bottom: -165px; 
+
+    display: none; background: rgba(41, 96, 107, .5);
+}
+
+@media (min-width: 480px)
+{
+    .menu
+    {
+        position: static; display: inline-block; background: none;
+    }
+}
+
+.menu-item
+{font-size: 17px; 
+
+    display: block; padding: 10px 70px 10px 10px; text-decoration: none; color: #fff;
+}
+
+@media (min-width: 480px)
+{
+    .menu-item
+    {
+        display: inline-block; padding: 27px 20px;
+    }
+}
+
+.logo
+{
+    display: inline-block;
+}
+
+.logo-title
+{font-size: 25px; 
+
+    margin: 0; padding: 20px;
+}
+
+.logo-link
+{
+    text-decoration: none; color: inherit;
+}
+
+.slider
+{
+    position: absolute; top: 0; width: 100%; height: auto;
+}

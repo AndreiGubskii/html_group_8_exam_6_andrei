@@ -1,2 +1,75 @@
+@import mixins
+
 *
 	box-sizing: border-box
+
+%clearfix
+	&::after
+		content: ""
+		display: table
+		clear: both
+
+.container
+	width: 100%
+	max-width: 940px
+	margin: 0 auto
+
+.header
+	@extend %clearfix
+	position: relative
+	z-index: 10
+
+.menu-btn
+	display: block
+	background: url('../images/hamburger.svg') 0 0 no-repeat
+	background-size: cover
+	width: 30px
+	height: 30px
+	margin: 20px 15px 0 0
+	+tablet
+		display: none
+
+.push-right
+	float: right
+
+.push-left
+	float: left
+.menu
+	display: none
+	position: absolute
+	bottom: -165px
+	right: -1px
+	background: rgba(41,96,107,0.5)
+	+tablet
+		position: static
+		background: none
+		display: inline-block
+		
+
+.menu-item
+	display: block
+	text-decoration: none
+	color: #fff
+	font-size: 17px
+	padding: 10px 70px 10px 10px
+	+tablet
+		display: inline-block
+		padding: 27px 20px
+
+
+.logo
+	display: inline-block  
+
+.logo-title
+	margin: 0
+	padding: 20px
+	font-size: 25px 
+.logo-link
+	text-decoration: none
+	color: inherit
+
+.slider
+	position: absolute
+	top: 0
+	width: 100%
+	height: auto

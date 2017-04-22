@@ -1,3 +1,10 @@
 {
-	"title": "Hello"
+	"title": "Escape",
+	"menu_items": [
+		"Home",
+		"Services",
+		"Clients",
+		"Team",
+		"Contact"
+  	]
 }

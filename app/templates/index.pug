@@ -1,10 +1,31 @@
 doctype html
 html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel="stylesheet", href="css/reset.css")
-        link(rel="stylesheet", href="css/main.css")
-        title= title
-        h1 Hello
-    body
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet", href="css/font-awesome.min.css")
+		link(rel="stylesheet", href="vendor/slick/slick.css")
+
+		link(rel="stylesheet", href="css/reset.css")
+		link(rel="stylesheet", href="css/main.css")
+		title= title			
+	body
+		.container
+			header.header
+				div(class='logo push-left')
+					h1.logo-title 
+						a(class='logo-link' href="#")
+							img(src='uploads/logo.png')
+				div(class = "menu-btn push-right" id="btn_menu")
+				nav(class="menu push-right")
+					each item in menu_items
+						a(class="menu-item" href="#")= item								
+		.slider
+			div
+				img(src="/uploads/promo.jpg" alt = "promo")
+			div
+				img(src="/uploads/promo.jpg" alt = "promo")
+
+		script(src="vendor/jq/jquery-3.1.1.js")
+		script(src="vendor/slick/slick.min.js")
+		script(src="js/main.js")
